@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:wght@100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+
 button{
-   background-color:#ffffe6;
-  color: black;
-  border: 2px solid black;
+   /* background-color:#ffffe6; */
+   background-color: blue;
+  color: white;
+  border: 1px solid transparent;
   border-radius: 3px;
   font-size: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
+  padding: 5px;
+  cursor: pointer;
 }
 div
 {
@@ -65,12 +76,16 @@ div
 }
 body
 {
-  background-color:#ffffe6;
   text-align: center;
+  background-color: #ccc;
 }
 input
 {
   text-align: center;
+  border-radius: 3px;
+  border: 2px solid blue;
+  padding: 5px;
+  font-size: 15px;
 }
 
 h3
@@ -84,26 +99,7 @@ article
   padding: 20px 80px;
 }
 
-@font-face {
-    font-family: 'Sketch Block';
-    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot');
-    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.svg#SketchBlockBold') format('svg');
-}
 
-@font-face {
-    font-family: 'Museo 700';
-    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot');
-    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.svg#SketchBlockBold') format('svg');
-}
-
-@font-face {
-    font-family: 'CallunaRegular';
-    src: url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.eot');
-    src: url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.svg#CallunaRegular') format('svg');
-}
 
   .container {
     width: 590px;
@@ -112,18 +108,27 @@ article
     position: relative;
   }
 
- blockquote {
-    width: 565px;
-    font: 2.65em CallunaRegular;
-    letter-spacing: .075em;
-    float: left;
-    padding: 45px 0 30px 25px;
-    margin: 0;
-    border-top: 2px dotted #858585;
-    border-bottom: 2px dotted #858585;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-  }
+#titre{
+  background-color: white;
+  border: 1px solid transparent;
+  width: max-content;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid blue; 
+}
+#main__page{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid transparent;
+  padding: 20px;
+  margin: auto;
+  width: max-content;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+  background-color: white;
+}
 
   .container:before {
     content: "“";
@@ -142,19 +147,6 @@ article
     color: #666;
   }
 
-    blockquote strong:first-child {
-      font: 1.85em "Sketch Block";
-      color: #fff79e;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    blockquote strong:last-child {
-      color :black;
-      font: 2em "Museo 700";
-      text-transform: uppercase;
-      letter-spacing: 0;
-    }
 
    b {
       float: right;
